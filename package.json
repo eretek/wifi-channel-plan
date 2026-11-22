@@ -1,0 +1,15 @@
+{
+  "name": "wifi-channel-plan",
+  "version": "1.1.3",
+  "private": true,
+  "description": "Create a 2.4/5 GHz channel plan draft from neighbouring access points and permitted channels; 20/40/80 MHz bonding, unresolved co-channel conflicts flagged.",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://network.eretek.com/en/tools/wifi-channel-plan",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "node test/run.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

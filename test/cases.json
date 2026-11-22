@@ -1,0 +1,64 @@
+{
+ "tests": [
+  {
+   "in": {
+    "band": "2.4",
+    "width": "20",
+    "chans": "1,6,11",
+    "aps": "AP-1;AP-2,AP-3\nAP-2;AP-3\nAP-3"
+   },
+   "v": {
+    "conflicts": 0
+   }
+  },
+  {
+   "in": {
+    "band": "2.4",
+    "width": "20",
+    "chans": "1,6,11",
+    "aps": "A;B,C,D\nB;C,D\nC;D"
+   },
+   "v": {
+    "conflicts": 2
+   }
+  },
+  {
+   "in": {
+    "band": "5",
+    "width": "40",
+    "chans": "36,40,44,48",
+    "aps": "A;B\nB;C\nC"
+   },
+   "v": {
+    "conflicts": 0
+   }
+  },
+  {
+   "in": {
+    "band": "2.4",
+    "width": "40",
+    "chans": "1,6,11",
+    "aps": "A;B"
+   },
+   "err": "width"
+  },
+  {
+   "in": {
+    "band": "2.4",
+    "width": "20",
+    "chans": "1,2,6",
+    "aps": "A;B"
+   },
+   "err": "chans"
+  },
+  {
+   "in": {
+    "band": "5",
+    "width": "80",
+    "chans": "36,40",
+    "aps": "A;B"
+   },
+   "err": "chans"
+  }
+ ]
+}
